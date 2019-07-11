@@ -1,9 +1,16 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class dis{
     public static void main(String[] args){
 	int randomValue1=0;
 	int randomValue2=0;
+
+	System.out.println("What is your name?");
+
+	Scanner scan = new Scanner(System.in);
+	String str = scan.next();
+	System.out.println("Hello, "+str+"! ");
 
 	Random r1 = new Random();
 	Random r2 = new Random();
@@ -18,6 +25,12 @@ public class dis{
 	System.out.println("Die 2:"+randomValue2);
 	System.out.println("Total value:"+total);
 
+	if(total>7){
+	    System.out.println("You won");
+	}
+	if(total<=7){
+	    System.out.println("You lost");
+	}
     
     }
 }
