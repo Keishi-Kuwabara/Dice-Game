@@ -26,10 +26,10 @@ public class dis{
 	System.out.println("Total value:"+total);
 
 	if(total>7){
-	    System.out.println("You won");
+	    System.out.println(""+str+" won");
 	}
 	if(total<=7){
-	    System.out.println("You lost");
+	    System.out.println(""+str+" lost");
 	}
     
     }
